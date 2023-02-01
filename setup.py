@@ -4,7 +4,6 @@ Created on Mon May 16 11:34:47 2022
 @author: lwuil
 """
 
-from dotenv import load_dotenv
 import os
 
 import discord
@@ -94,7 +93,7 @@ my_background_task.start()
 
 
 
-load_dotenv(dotenv_path="config") 
+
         
     
-bot.run(os.getenv("TOKEN"))
+bot.run("TOKEN")
