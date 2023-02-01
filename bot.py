@@ -5,6 +5,9 @@ Created on Mon May 16 11:34:47 2022
 @author: lwuil
 """
 
+from dotenv import load_dotenv
+import os
+
 import discord
 from discord.ext import commands, tasks
 from discord_slash import SlashCommand
@@ -92,10 +95,10 @@ my_background_task.start()
 
 
 
-    
+load_dotenv(dotenv_path="config") 
         
     
-bot.run("MTAzMzcxODYxNjYyMjkxMTU1OQ.GxWKb3.dLnpX8Ru4ZlzQ_9Sn4M0yZNfGApX18C1Y0sC7Y")
+bot.run(os.getenv("TOKEN"))
 
     
 
